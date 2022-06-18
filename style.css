@@ -5,20 +5,25 @@
 }
 
 #big{
-    background-color: aliceblue;
+    background-color: rgb(212, 216, 219);
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(16, max-content);
-    grid-template-rows: repeat(16, max-content);
+    grid-template-columns: repeat(64, max-content);
+    grid-template-rows: repeat(64, max-content);
     
     
 
 }
 .grids{
-    height: 20px;
-    width: 20px;
-    background-color:white;
-    border: 1px solid;
+    height: 10px;
+    width: 10px;
+    background-color: rgb(255, 255, 255);
+    border: ;
+}
+.newcol{
+    height: 40px;
+    width: 40px;
+    background-color: black;
 }
 
 
