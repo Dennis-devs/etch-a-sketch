@@ -11,7 +11,7 @@ function createDivs(){
       bigdiv.appendChild(smalldiv);
       }
    }
-   /*let myRules = document.styleSheets[0];
+   let myRules = document.styleSheets[0];
    let newColor;
    for (let i = 0; i < myRules.cssRules.length; i++) {
       if(myRules.cssRules[i].selectorText === '.grids'){
@@ -27,11 +27,13 @@ function createDivs(){
     function newcol() {
       console.log ( 'rgb(' + random() + ', ' + random() + ', ' + random() +  ')');
       return 'rgb(' + random() + ', ' + random() + ', ' + random() +  ')';
-    }*/
+    }
 
     let smalldivs = document.querySelectorAll('.grids')
    smalldivs.forEach(item => {item.addEventListener('mousemove', function(){
-      item.setAttribute('style', 'background: black;');
+      let col = newcol();
+      newColor = item.style.setProperty('background-color', col);
+      /*item.setAttribute('style', 'background: black;');*/
    })})
    
       
