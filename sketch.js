@@ -19,20 +19,20 @@ function createDivs(){
       }       
    }
 
-   function random() {
+   /*function min() {
       const num = Math.min(0, 255)
       console.log(num)
       return num;
     }
     function newcol() {
-      console.log ( 'rgb(' + random() + ', ' + random() + ', ' + random() +  ')');
-      return 'rgb(' + random() + ', ' + random() + ', ' + random() +  ')';
-    }
+      console.log ( 'rgb(' + min() + ', ' + min() + ', ' + min() +  ')');
+      return 'rgb(' + min() + ', ' + min() + ', ' + min() +  ')';
+    }*/
 
     let smalldivs = document.querySelectorAll('.grids')
    smalldivs.forEach(item => {item.addEventListener('mousemove', function(){
-      let col = newcol();
-      newColor = item.style.setProperty('background-color', col);
+      /*let col = newcol();*/
+      newColor = item.style.setProperty('background-color', 'rgb(0, 0, 0)');
       /*item.setAttribute('style', 'background: black;');*/
    })})
    
